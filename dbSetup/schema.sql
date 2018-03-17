@@ -18,7 +18,8 @@ BEGIN;
 CREATE TABLE users (
   id SERIAL NOT NULL PRIMARY KEY,
   uname VARCHAR NOT NULL,
-  hash TEXT NOT NULL
+  hash TEXT NOT NULL,
+  token VARCHAR NOT NULL -- will be generated from user creation
 );
 /* from PSQL docs:
 CREATE INDEX constructs an index on the specified column(s) of the specified table.
