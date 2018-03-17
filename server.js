@@ -3,12 +3,17 @@ const express =  require('express');
 const logger = require('morgan');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
+const {authenticate} = require('./services/auth')
 const PORT = process.env.PORT || 3000;
 
 const app = express();
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
+app.use(cookieParser());
+
+// running all calls through authenticate
+app.use(authenticate);
 
 // all routes to router.js
 app.use(require('./router'));
