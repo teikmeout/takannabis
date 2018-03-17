@@ -1,0 +1,8 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: helvetica;
+  height: 100%;
+  background-color: teal;
+  box-sizing: border-box;
+}
