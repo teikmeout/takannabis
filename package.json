@@ -1,0 +1,37 @@
+{
+  "name": "takannabis",
+  "version": "1.0.0",
+  "description": "web application made for tracking purchases, consumption and expenses on weed",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teikmeout/takannabis.git"
+  },
+  "author": "Jonathan Ahrens",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/teikmeout/takannabis/issues"
+  },
+  "homepage": "https://github.com/teikmeout/takannabis#readme",
+  "devDependencies": {
+    "eslint": "^4.19.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "method-override": "^2.3.10",
+    "morgan": "^1.9.0",
+    "pg-promise": "^8.2.2"
+  }
+}
